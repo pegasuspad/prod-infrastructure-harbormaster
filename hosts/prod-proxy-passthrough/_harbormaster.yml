@@ -1,0 +1,8 @@
+config:
+  prune: true
+apps:
+  nginx:
+    branch: main
+    compose_config: 
+      - hosts/prod-proxy-passthrough/nginx.docker-compose.yml
+    url: https://github.com/pegasuspad/prod-infrastructure-harbormaster.git
